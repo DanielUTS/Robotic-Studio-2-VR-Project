@@ -1,0 +1,219 @@
+\doxysection{hydra\+\_\+listen.\+Hydra\+Ctrl Class Reference}
+\hypertarget{classhydra__listen_1_1_hydra_ctrl}{}\label{classhydra__listen_1_1_hydra_ctrl}\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+
+
+Class for controlling the robot arm using Hydra input.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a6199c80d4198e813f9c53c1f3801232d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a2eb0e00ce94050ba4d00110c59db4c56}{hydra\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback function for the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a88ee003011702871c91617752aeaecb4}{sub\+\_\+rot}} (self)
+\begin{DoxyCompactList}\small\item\em Calculates the difference rotation between the current rotation and the original rotation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_ab713d2516df0eb4a2f171fe654746a73}{callback\+\_\+arm\+\_\+pose}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback function for the arm pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_acb1071f0b35879236061547517464799}{xyz}}
+\begin{DoxyCompactList}\small\item\em Position of the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_ab5ece12808fbd502e770a745d9268030}{rotation}}
+\begin{DoxyCompactList}\small\item\em Rotation of the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a4ec24b55c88768dcee1e5c8e73fed336}{joy}}
+\begin{DoxyCompactList}\small\item\em Joy values of the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_adc2f50748ca18f62e2720ffea995c3a0}{buttons}}
+\begin{DoxyCompactList}\small\item\em Button values of the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_ac490e14f5720e0b949b16b2725105622}{trigger}}
+\begin{DoxyCompactList}\small\item\em Trigger value of the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a8bd4b678cb63402d98e767407981e6c0}{state}}
+\begin{DoxyCompactList}\small\item\em State of the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a45a4725a812968d97404cab2192c1c97}{diff\+\_\+pose}}
+\begin{DoxyCompactList}\small\item\em Difference pose calculated from the Hydra input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a94fc431dc4f59615d71a1d46171e9915}{scale}}
+\begin{DoxyCompactList}\small\item\em Scaling factor for the difference pose. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a507a4eefff1ea40c477a6be64e446afc}{key}}
+\begin{DoxyCompactList}\small\item\em Key value for controlling the behavior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a166d95ed5fe63b94fe4c1e6d03650423}{pressed}}
+\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_aaf40745d9b7f2b98fd8678ea707de5be}{ori\+\_\+xyz}}
+\item 
+\mbox{\hyperlink{classhydra__listen_1_1_hydra_ctrl_a90c52d45b48d4326f40bb290db108796}{ori\+\_\+rot}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for controlling the robot arm using Hydra input. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a6199c80d4198e813f9c53c1f3801232d}\label{classhydra__listen_1_1_hydra_ctrl_a6199c80d4198e813f9c53c1f3801232d} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_ab713d2516df0eb4a2f171fe654746a73}\label{classhydra__listen_1_1_hydra_ctrl_ab713d2516df0eb4a2f171fe654746a73} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!callback\_arm\_pose@{callback\_arm\_pose}}
+\index{callback\_arm\_pose@{callback\_arm\_pose}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{callback\_arm\_pose()}{callback\_arm\_pose()}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+callback\+\_\+arm\+\_\+pose (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+Callback function for the arm pose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The arm pose message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a2eb0e00ce94050ba4d00110c59db4c56}\label{classhydra__listen_1_1_hydra_ctrl_a2eb0e00ce94050ba4d00110c59db4c56} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!hydra\_callback@{hydra\_callback}}
+\index{hydra\_callback@{hydra\_callback}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{hydra\_callback()}{hydra\_callback()}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+hydra\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+Callback function for the Hydra input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The Hydra input message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a88ee003011702871c91617752aeaecb4}\label{classhydra__listen_1_1_hydra_ctrl_a88ee003011702871c91617752aeaecb4} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!sub\_rot@{sub\_rot}}
+\index{sub\_rot@{sub\_rot}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{sub\_rot()}{sub\_rot()}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+sub\+\_\+rot (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Calculates the difference rotation between the current rotation and the original rotation. 
+
+\begin{DoxyReturn}{Returns}
+The difference rotation. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_adc2f50748ca18f62e2720ffea995c3a0}\label{classhydra__listen_1_1_hydra_ctrl_adc2f50748ca18f62e2720ffea995c3a0} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!buttons@{buttons}}
+\index{buttons@{buttons}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{buttons}{buttons}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+buttons}
+
+
+
+Button values of the Hydra input. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a45a4725a812968d97404cab2192c1c97}\label{classhydra__listen_1_1_hydra_ctrl_a45a4725a812968d97404cab2192c1c97} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!diff\_pose@{diff\_pose}}
+\index{diff\_pose@{diff\_pose}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{diff\_pose}{diff\_pose}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+diff\+\_\+pose}
+
+
+
+Difference pose calculated from the Hydra input. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a4ec24b55c88768dcee1e5c8e73fed336}\label{classhydra__listen_1_1_hydra_ctrl_a4ec24b55c88768dcee1e5c8e73fed336} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!joy@{joy}}
+\index{joy@{joy}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{joy}{joy}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+joy}
+
+
+
+Joy values of the Hydra input. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a507a4eefff1ea40c477a6be64e446afc}\label{classhydra__listen_1_1_hydra_ctrl_a507a4eefff1ea40c477a6be64e446afc} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!key@{key}}
+\index{key@{key}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+key}
+
+
+
+Key value for controlling the behavior. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a90c52d45b48d4326f40bb290db108796}\label{classhydra__listen_1_1_hydra_ctrl_a90c52d45b48d4326f40bb290db108796} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!ori\_rot@{ori\_rot}}
+\index{ori\_rot@{ori\_rot}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{ori\_rot}{ori\_rot}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+ori\+\_\+rot}
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_aaf40745d9b7f2b98fd8678ea707de5be}\label{classhydra__listen_1_1_hydra_ctrl_aaf40745d9b7f2b98fd8678ea707de5be} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!ori\_xyz@{ori\_xyz}}
+\index{ori\_xyz@{ori\_xyz}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{ori\_xyz}{ori\_xyz}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+ori\+\_\+xyz}
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a166d95ed5fe63b94fe4c1e6d03650423}\label{classhydra__listen_1_1_hydra_ctrl_a166d95ed5fe63b94fe4c1e6d03650423} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!pressed@{pressed}}
+\index{pressed@{pressed}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+pressed}
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_ab5ece12808fbd502e770a745d9268030}\label{classhydra__listen_1_1_hydra_ctrl_ab5ece12808fbd502e770a745d9268030} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!rotation@{rotation}}
+\index{rotation@{rotation}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+rotation}
+
+
+
+Rotation of the Hydra input. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a94fc431dc4f59615d71a1d46171e9915}\label{classhydra__listen_1_1_hydra_ctrl_a94fc431dc4f59615d71a1d46171e9915} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!scale@{scale}}
+\index{scale@{scale}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+scale}
+
+
+
+Scaling factor for the difference pose. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_a8bd4b678cb63402d98e767407981e6c0}\label{classhydra__listen_1_1_hydra_ctrl_a8bd4b678cb63402d98e767407981e6c0} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!state@{state}}
+\index{state@{state}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+state}
+
+
+
+State of the Hydra input. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_ac490e14f5720e0b949b16b2725105622}\label{classhydra__listen_1_1_hydra_ctrl_ac490e14f5720e0b949b16b2725105622} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!trigger@{trigger}}
+\index{trigger@{trigger}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{trigger}{trigger}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+trigger}
+
+
+
+Trigger value of the Hydra input. 
+
+\Hypertarget{classhydra__listen_1_1_hydra_ctrl_acb1071f0b35879236061547517464799}\label{classhydra__listen_1_1_hydra_ctrl_acb1071f0b35879236061547517464799} 
+\index{hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}!xyz@{xyz}}
+\index{xyz@{xyz}!hydra\_listen.HydraCtrl@{hydra\_listen.HydraCtrl}}
+\doxysubsubsection{\texorpdfstring{xyz}{xyz}}
+{\footnotesize\ttfamily hydra\+\_\+listen.\+Hydra\+Ctrl.\+xyz}
+
+
+
+Position of the Hydra input. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\mbox{\hyperlink{hydra__listen_8py}{hydra\+\_\+listen.\+py}}\end{DoxyCompactItemize}

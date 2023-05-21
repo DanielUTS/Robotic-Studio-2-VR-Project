@@ -1,0 +1,158 @@
+\doxysection{move\+\_\+pose Namespace Reference}
+\hypertarget{namespacemove__pose}{}\label{namespacemove__pose}\index{move\_pose@{move\_pose}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a5e240c6629cb99d4cac3db6868ff5190}{concatenate\+\_\+trajectories}} (trajectories)
+\begin{DoxyCompactList}\small\item\em Concatenates multiple trajectories into a single composite trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a02171315d2c32647c478bdc0c370096b}{anonymous}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_afce3bc7b5a2f4978552fdc82a381bc93}{robot}} = moveit\+\_\+commander.\+Robot\+Commander()
+\item 
+\mbox{\hyperlink{namespacemove__pose_a5703da735f5a81cd953cc08759866702}{scene}} = moveit\+\_\+commander.\+Planning\+Scene\+Interface()
+\item 
+\mbox{\hyperlink{namespacemove__pose_aec2f4e4a38c7a90ffa48376d9a890202}{group}} = moveit\+\_\+commander.\+Move\+Group\+Commander(\"{}right\+\_\+arm\"{})
+\item 
+\mbox{\hyperlink{namespacemove__pose_aacd26f0c60bc81aad23ccad4abcc07dc}{display\+\_\+trajectory\+\_\+publisher}} = rospy.\+Publisher(\textquotesingle{}/move\+\_\+group/display\+\_\+planned\+\_\+path\textquotesingle{}, moveit\+\_\+msgs.\+msg.\+Display\+Trajectory, queue\+\_\+size=1)
+\item 
+list \mbox{\hyperlink{namespacemove__pose_a84f8003abeb89826eb20aa1bf544db02}{singularities}}
+\item 
+list \mbox{\hyperlink{namespacemove__pose_a4d3c1569364b6cec169c5080dee495de}{plans}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a2fd73788cbd1902ff0978b10dba2e7a0}{plan}} = group.\+plan()
+\item 
+\mbox{\hyperlink{namespacemove__pose_af64cd1376aefe7d1ba7c69a97f2a0cf9}{composite\+\_\+traj}} = \mbox{\hyperlink{namespacemove__pose_a5e240c6629cb99d4cac3db6868ff5190}{concatenate\+\_\+trajectories}}(\mbox{\hyperlink{namespacemove__pose_a4d3c1569364b6cec169c5080dee495de}{plans}})
+\item 
+\mbox{\hyperlink{namespacemove__pose_a7ae1a6d1fcfe01faaeef39802674a6fd}{target\+\_\+pose}} = geometry\+\_\+msgs.\+msg.\+Pose()
+\item 
+\mbox{\hyperlink{namespacemove__pose_ac9b0cabcf95bb28b04e1602989933f6f}{x}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a23df6e9e6003d98c936fca7e7c65a2a8}{y}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a6cde8d568ee699c18393f89f771f5e2a}{z}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_ae009af8e4f833bcd74846d9000906773}{wait}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacemove__pose_a5e240c6629cb99d4cac3db6868ff5190}\label{namespacemove__pose_a5e240c6629cb99d4cac3db6868ff5190} 
+\index{move\_pose@{move\_pose}!concatenate\_trajectories@{concatenate\_trajectories}}
+\index{concatenate\_trajectories@{concatenate\_trajectories}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{concatenate\_trajectories()}{concatenate\_trajectories()}}
+{\footnotesize\ttfamily move\+\_\+pose.\+concatenate\+\_\+trajectories (\begin{DoxyParamCaption}\item[{}]{trajectories }\end{DoxyParamCaption})}
+
+
+
+Concatenates multiple trajectories into a single composite trajectory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trajectories} & A list of trajectories to concatenate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The composite trajectory of all the points. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacemove__pose_a02171315d2c32647c478bdc0c370096b}\label{namespacemove__pose_a02171315d2c32647c478bdc0c370096b} 
+\index{move\_pose@{move\_pose}!anonymous@{anonymous}}
+\index{anonymous@{anonymous}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{anonymous}{anonymous}}
+{\footnotesize\ttfamily move\+\_\+pose.\+anonymous}
+
+\Hypertarget{namespacemove__pose_af64cd1376aefe7d1ba7c69a97f2a0cf9}\label{namespacemove__pose_af64cd1376aefe7d1ba7c69a97f2a0cf9} 
+\index{move\_pose@{move\_pose}!composite\_traj@{composite\_traj}}
+\index{composite\_traj@{composite\_traj}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{composite\_traj}{composite\_traj}}
+{\footnotesize\ttfamily move\+\_\+pose.\+composite\+\_\+traj = \mbox{\hyperlink{namespacemove__pose_a5e240c6629cb99d4cac3db6868ff5190}{concatenate\+\_\+trajectories}}(\mbox{\hyperlink{namespacemove__pose_a4d3c1569364b6cec169c5080dee495de}{plans}})}
+
+\Hypertarget{namespacemove__pose_aacd26f0c60bc81aad23ccad4abcc07dc}\label{namespacemove__pose_aacd26f0c60bc81aad23ccad4abcc07dc} 
+\index{move\_pose@{move\_pose}!display\_trajectory\_publisher@{display\_trajectory\_publisher}}
+\index{display\_trajectory\_publisher@{display\_trajectory\_publisher}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{display\_trajectory\_publisher}{display\_trajectory\_publisher}}
+{\footnotesize\ttfamily move\+\_\+pose.\+display\+\_\+trajectory\+\_\+publisher = rospy.\+Publisher(\textquotesingle{}/move\+\_\+group/display\+\_\+planned\+\_\+path\textquotesingle{}, moveit\+\_\+msgs.\+msg.\+Display\+Trajectory, queue\+\_\+size=1)}
+
+\Hypertarget{namespacemove__pose_aec2f4e4a38c7a90ffa48376d9a890202}\label{namespacemove__pose_aec2f4e4a38c7a90ffa48376d9a890202} 
+\index{move\_pose@{move\_pose}!group@{group}}
+\index{group@{group}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{group}{group}}
+{\footnotesize\ttfamily move\+\_\+pose.\+group = moveit\+\_\+commander.\+Move\+Group\+Commander(\"{}right\+\_\+arm\"{})}
+
+\Hypertarget{namespacemove__pose_a2fd73788cbd1902ff0978b10dba2e7a0}\label{namespacemove__pose_a2fd73788cbd1902ff0978b10dba2e7a0} 
+\index{move\_pose@{move\_pose}!plan@{plan}}
+\index{plan@{plan}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{plan}{plan}}
+{\footnotesize\ttfamily move\+\_\+pose.\+plan = group.\+plan()}
+
+\Hypertarget{namespacemove__pose_a4d3c1569364b6cec169c5080dee495de}\label{namespacemove__pose_a4d3c1569364b6cec169c5080dee495de} 
+\index{move\_pose@{move\_pose}!plans@{plans}}
+\index{plans@{plans}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{plans}{plans}}
+{\footnotesize\ttfamily list move\+\_\+pose.\+plans = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespacemove__pose_afce3bc7b5a2f4978552fdc82a381bc93}\label{namespacemove__pose_afce3bc7b5a2f4978552fdc82a381bc93} 
+\index{move\_pose@{move\_pose}!robot@{robot}}
+\index{robot@{robot}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{robot}{robot}}
+{\footnotesize\ttfamily move\+\_\+pose.\+robot = moveit\+\_\+commander.\+Robot\+Commander()}
+
+\Hypertarget{namespacemove__pose_a5703da735f5a81cd953cc08759866702}\label{namespacemove__pose_a5703da735f5a81cd953cc08759866702} 
+\index{move\_pose@{move\_pose}!scene@{scene}}
+\index{scene@{scene}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily move\+\_\+pose.\+scene = moveit\+\_\+commander.\+Planning\+Scene\+Interface()}
+
+\Hypertarget{namespacemove__pose_a84f8003abeb89826eb20aa1bf544db02}\label{namespacemove__pose_a84f8003abeb89826eb20aa1bf544db02} 
+\index{move\_pose@{move\_pose}!singularities@{singularities}}
+\index{singularities@{singularities}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{singularities}{singularities}}
+{\footnotesize\ttfamily list move\+\_\+pose.\+singularities}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ [0.3,\ -\/1.2,\ 0.8,\ 0.5,\ 1.2,\ -\/2.5,\ 2.5],\ \ \textcolor{comment}{\#\ Joint\ Limit\ Singularity}}
+\DoxyCodeLine{00003\ \ \ \ \ [1.2,\ 0.7,\ 2.8,\ 0.0,\ 0.0,\ 0.0,\ 1.5],\ \ \ \ \textcolor{comment}{\#\ Wrist\ Singularity}}
+\DoxyCodeLine{00004\ \ \ \ \ [0.5,\ 1.5,\ -\/0.8,\ 0.0,\ 1.8,\ 0.3,\ 0.9],\ \ \ \ \textcolor{comment}{\#\ Elbow\ Singularity}}
+\DoxyCodeLine{00005\ \ \ \ \ [1.8,\ -\/0.5,\ 0.9,\ 0.7,\ 1.2,\ 1.5,\ -\/1.4],\ \ \ \textcolor{comment}{\#\ Shoulder\ Singularity}}
+\DoxyCodeLine{00006\ \ \ \ \ [0.9,\ 0.4,\ 1.2,\ -\/0.5,\ 1.8,\ 0.9,\ 1.2],\ \ \ \ \textcolor{comment}{\#\ Reach\ Singularity}}
+\DoxyCodeLine{00007\ \ \ \ \ [0.6,\ 0.4,\ 0.8,\ 1.2,\ -\/1.5,\ 1.0,\ -\/0.9]\ \ \ \ \textcolor{comment}{\#\ Jacobian\ Singularity}}
+\DoxyCodeLine{00008\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacemove__pose_a7ae1a6d1fcfe01faaeef39802674a6fd}\label{namespacemove__pose_a7ae1a6d1fcfe01faaeef39802674a6fd} 
+\index{move\_pose@{move\_pose}!target\_pose@{target\_pose}}
+\index{target\_pose@{target\_pose}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{target\_pose}{target\_pose}}
+{\footnotesize\ttfamily move\+\_\+pose.\+target\+\_\+pose = geometry\+\_\+msgs.\+msg.\+Pose()}
+
+\Hypertarget{namespacemove__pose_ae009af8e4f833bcd74846d9000906773}\label{namespacemove__pose_ae009af8e4f833bcd74846d9000906773} 
+\index{move\_pose@{move\_pose}!wait@{wait}}
+\index{wait@{wait}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{wait}{wait}}
+{\footnotesize\ttfamily move\+\_\+pose.\+wait}
+
+\Hypertarget{namespacemove__pose_ac9b0cabcf95bb28b04e1602989933f6f}\label{namespacemove__pose_ac9b0cabcf95bb28b04e1602989933f6f} 
+\index{move\_pose@{move\_pose}!x@{x}}
+\index{x@{x}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily move\+\_\+pose.\+x}
+
+\Hypertarget{namespacemove__pose_a23df6e9e6003d98c936fca7e7c65a2a8}\label{namespacemove__pose_a23df6e9e6003d98c936fca7e7c65a2a8} 
+\index{move\_pose@{move\_pose}!y@{y}}
+\index{y@{y}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily move\+\_\+pose.\+y}
+
+\Hypertarget{namespacemove__pose_a6cde8d568ee699c18393f89f771f5e2a}\label{namespacemove__pose_a6cde8d568ee699c18393f89f771f5e2a} 
+\index{move\_pose@{move\_pose}!z@{z}}
+\index{z@{z}!move\_pose@{move\_pose}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily move\+\_\+pose.\+z}
+

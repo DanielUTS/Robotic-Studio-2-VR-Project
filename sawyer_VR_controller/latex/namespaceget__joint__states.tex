@@ -1,0 +1,55 @@
+\doxysection{get\+\_\+joint\+\_\+states Namespace Reference}
+\hypertarget{namespaceget__joint__states}{}\label{namespaceget__joint__states}\index{get\_joint\_states@{get\_joint\_states}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceget__joint__states_a51d454eb9061755efc6c98a47232d29d}{callback\+\_\+joints}} (msg)
+\begin{DoxyCompactList}\small\item\em Callback function for the joint states. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceget__joint__states_af4d99dd049d80e22411cf74c73283cca}{sub}} = rospy.\+Subscriber(\textquotesingle{}robot/joint\+\_\+states\textquotesingle{}, Joint\+State, \mbox{\hyperlink{namespaceget__joint__states_a51d454eb9061755efc6c98a47232d29d}{callback\+\_\+joints}})
+\item 
+\mbox{\hyperlink{namespaceget__joint__states_ac42d47506929fb167119cc1ee1c9fee3}{pub}} = rospy.\+Publisher(\textquotesingle{}state\+\_\+listener\textquotesingle{}, Float32\+Multi\+Array, queue\+\_\+size=1)
+\item 
+\mbox{\hyperlink{namespaceget__joint__states_aaf81b9b330e9b0bf2bbf1e9e0410d49d}{loop\+\_\+rate}} = rospy.\+Rate(10)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceget__joint__states_a51d454eb9061755efc6c98a47232d29d}\label{namespaceget__joint__states_a51d454eb9061755efc6c98a47232d29d} 
+\index{get\_joint\_states@{get\_joint\_states}!callback\_joints@{callback\_joints}}
+\index{callback\_joints@{callback\_joints}!get\_joint\_states@{get\_joint\_states}}
+\doxysubsubsection{\texorpdfstring{callback\_joints()}{callback\_joints()}}
+{\footnotesize\ttfamily get\+\_\+joint\+\_\+states.\+callback\+\_\+joints (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+Callback function for the joint states. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The joint state message. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceget__joint__states_aaf81b9b330e9b0bf2bbf1e9e0410d49d}\label{namespaceget__joint__states_aaf81b9b330e9b0bf2bbf1e9e0410d49d} 
+\index{get\_joint\_states@{get\_joint\_states}!loop\_rate@{loop\_rate}}
+\index{loop\_rate@{loop\_rate}!get\_joint\_states@{get\_joint\_states}}
+\doxysubsubsection{\texorpdfstring{loop\_rate}{loop\_rate}}
+{\footnotesize\ttfamily get\+\_\+joint\+\_\+states.\+loop\+\_\+rate = rospy.\+Rate(10)}
+
+\Hypertarget{namespaceget__joint__states_ac42d47506929fb167119cc1ee1c9fee3}\label{namespaceget__joint__states_ac42d47506929fb167119cc1ee1c9fee3} 
+\index{get\_joint\_states@{get\_joint\_states}!pub@{pub}}
+\index{pub@{pub}!get\_joint\_states@{get\_joint\_states}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily get\+\_\+joint\+\_\+states.\+pub = rospy.\+Publisher(\textquotesingle{}state\+\_\+listener\textquotesingle{}, Float32\+Multi\+Array, queue\+\_\+size=1)}
+
+\Hypertarget{namespaceget__joint__states_af4d99dd049d80e22411cf74c73283cca}\label{namespaceget__joint__states_af4d99dd049d80e22411cf74c73283cca} 
+\index{get\_joint\_states@{get\_joint\_states}!sub@{sub}}
+\index{sub@{sub}!get\_joint\_states@{get\_joint\_states}}
+\doxysubsubsection{\texorpdfstring{sub}{sub}}
+{\footnotesize\ttfamily get\+\_\+joint\+\_\+states.\+sub = rospy.\+Subscriber(\textquotesingle{}robot/joint\+\_\+states\textquotesingle{}, Joint\+State, \mbox{\hyperlink{namespaceget__joint__states_a51d454eb9061755efc6c98a47232d29d}{callback\+\_\+joints}})}
+

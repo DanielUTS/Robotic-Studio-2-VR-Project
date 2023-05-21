@@ -33,7 +33,32 @@ cd ~/catkin_ws
 ./intera.sh
 rosrun intera_interface enable_robot.py -e
 ```
+## Other Dependencies
+
+To be able to run this project you will need to install the Driver to make the razer hydra work. 
+
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/ros-drivers/razer_hydra
+sudo cp razer_hydra/config/99-hydra-indigo.rules /etc/udev/rules.d/
+```
+then reboot your Ubuntu to make reload the udev rules
+
+you can then test if the package work properly by doing the following commands.
+
+```bash
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+roslaunch razer_hydra hydra_rviz.launch
+```
+If the controller are connected, it will open the RViz software with the tf representation of the controller position from the base. Make sure the ROS Master work properly or this will not work.
 
 ## Run the VR command 
 
-..................
+To control the robot with the controllers you need to run in one terminal the following command
+
+```bash
+roslaunch sawyer_VR_controller main.launch
+```
+this should run three different process

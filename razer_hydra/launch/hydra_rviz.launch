@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find razer_hydra)/launch/hydra.launch" />
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find razer_hydra)/config/config.rviz" />
+
+</launch>

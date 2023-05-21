@@ -1,0 +1,14 @@
+<launch>
+        <!---->
+        <node pkg="intera_interface" type="joint_trajectory_action_server.py" name="move_state_intera">
+        </node>
+        <!---->
+        <include file="$(find sawyer_moveit_config)/launch/sawyer_moveit.launch"/>
+        
+        <!---->
+        <include file="$(find razer_hydra)/launch/hydra.launch"/>
+        
+        
+
+       
+</launch>

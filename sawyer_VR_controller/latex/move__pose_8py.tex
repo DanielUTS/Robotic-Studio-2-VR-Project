@@ -1,0 +1,53 @@
+\doxysection{scripts/move\+\_\+pose.py File Reference}
+\hypertarget{move__pose_8py}{}\label{move__pose_8py}\index{scripts/move\_pose.py@{scripts/move\_pose.py}}
+
+
+This file demonstrates the usage of Move\+It for trajectory planning and execution in a ROS project.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacemove__pose}{move\+\_\+pose}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a5e240c6629cb99d4cac3db6868ff5190}{move\+\_\+pose.\+concatenate\+\_\+trajectories}} (trajectories)
+\begin{DoxyCompactList}\small\item\em Concatenates multiple trajectories into a single composite trajectory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a02171315d2c32647c478bdc0c370096b}{move\+\_\+pose.\+anonymous}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_afce3bc7b5a2f4978552fdc82a381bc93}{move\+\_\+pose.\+robot}} = moveit\+\_\+commander.\+Robot\+Commander()
+\item 
+\mbox{\hyperlink{namespacemove__pose_a5703da735f5a81cd953cc08759866702}{move\+\_\+pose.\+scene}} = moveit\+\_\+commander.\+Planning\+Scene\+Interface()
+\item 
+\mbox{\hyperlink{namespacemove__pose_aec2f4e4a38c7a90ffa48376d9a890202}{move\+\_\+pose.\+group}} = moveit\+\_\+commander.\+Move\+Group\+Commander(\"{}right\+\_\+arm\"{})
+\item 
+\mbox{\hyperlink{namespacemove__pose_aacd26f0c60bc81aad23ccad4abcc07dc}{move\+\_\+pose.\+display\+\_\+trajectory\+\_\+publisher}} = rospy.\+Publisher(\textquotesingle{}/move\+\_\+group/display\+\_\+planned\+\_\+path\textquotesingle{}, moveit\+\_\+msgs.\+msg.\+Display\+Trajectory, queue\+\_\+size=1)
+\item 
+list \mbox{\hyperlink{namespacemove__pose_a84f8003abeb89826eb20aa1bf544db02}{move\+\_\+pose.\+singularities}}
+\item 
+list \mbox{\hyperlink{namespacemove__pose_a4d3c1569364b6cec169c5080dee495de}{move\+\_\+pose.\+plans}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a2fd73788cbd1902ff0978b10dba2e7a0}{move\+\_\+pose.\+plan}} = group.\+plan()
+\item 
+\mbox{\hyperlink{namespacemove__pose_af64cd1376aefe7d1ba7c69a97f2a0cf9}{move\+\_\+pose.\+composite\+\_\+traj}} = \mbox{\hyperlink{namespacemove__pose_a5e240c6629cb99d4cac3db6868ff5190}{concatenate\+\_\+trajectories}}(\mbox{\hyperlink{namespacemove__pose_a4d3c1569364b6cec169c5080dee495de}{plans}})
+\item 
+\mbox{\hyperlink{namespacemove__pose_a7ae1a6d1fcfe01faaeef39802674a6fd}{move\+\_\+pose.\+target\+\_\+pose}} = geometry\+\_\+msgs.\+msg.\+Pose()
+\item 
+\mbox{\hyperlink{namespacemove__pose_ac9b0cabcf95bb28b04e1602989933f6f}{move\+\_\+pose.\+x}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a23df6e9e6003d98c936fca7e7c65a2a8}{move\+\_\+pose.\+y}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_a6cde8d568ee699c18393f89f771f5e2a}{move\+\_\+pose.\+z}}
+\item 
+\mbox{\hyperlink{namespacemove__pose_ae009af8e4f833bcd74846d9000906773}{move\+\_\+pose.\+wait}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file demonstrates the usage of Move\+It for trajectory planning and execution in a ROS project. 
+
